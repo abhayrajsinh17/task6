@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Student Details"
+        android:textSize="24sp"
+        android:textColor="#FB0101"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <EditText
+        android:id="@+id/StudentID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Title"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#027BE6"
+        android:hint="Student ID"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/StudentID"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#027BE6"
+        android:hint="Your Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Name"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#027BE6"
+        android:hint="Your Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/Department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Email"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#027BE6"
+        android:hint="Department"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/Year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Department"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#027BE6"
+        android:hint="Year of Study"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Year"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="32dp"
+        android:text="Submit" />
+
+</RelativeLayout>
